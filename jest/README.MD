@@ -3,6 +3,9 @@
   * ```(UserProfile.getFullName as jest.Mock).mockImplementation(() => 'John Doe');```
 * Mock an exported module
  ```
+ import { mocked } from 'ts-jest/utils';
+ 
+ 
  const mockAddBrand = mocked(addBrand)
  mockAddBrand.mockResolvedValueOnce(() => Promise.resolve({}));
  

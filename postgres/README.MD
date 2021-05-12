@@ -10,4 +10,7 @@ WHERE NOT EXISTS(
 
 * Inser records with fixed value
    ```insert into user_brand (username, brand)  select 'shivadbuser@sephora.com', id from brand;```
+   
+* Export table schema
+```pg_dump --schema-only --no-owner newness_nif_management > create_the_tables.sql```
 
